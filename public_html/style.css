@@ -106,6 +106,10 @@ a {
     cursor: pointer;
 }
 
+a:active {
+    outline: none;
+}
+
 #dialog {
     color: white;
 }
@@ -117,6 +121,7 @@ a {
 a:hover, a:focus {
     background-color: #AA0000;
     color: white;
+    outline: none;
 }
 
 .center {

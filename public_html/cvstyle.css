@@ -1,0 +1,109 @@
+.right {
+    float:right;  
+    margin-right: 15%;
+}
+
+h1 {
+    font-size: 140%;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 5px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;    
+    width: 95%;
+}
+
+.margintop {
+    margin-top: 10px;
+}
+
+h4 {
+    font-size: 130%;
+    margin-bottom: 0px;
+    margin-top: 30px;
+}
+
+.first {
+     margin-top: 0px; 
+     padding-top: 0px;
+}
+
+body {
+    font-family: "Open Sans", serif;
+    margin: 5px;
+}
+
+.listitem {
+    font-size: 110%;
+}
+
+.nomarginbtm {
+    margin-bottom: 0px;
+}
+
+#cvimg {
+    max-width: 100px;
+}
+
+.inner {
+    margin-left: 40px;
+}
+
+.imgborder {
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+.pl {
+    margin-left: 5px;
+    margin-bottom: 0px;
+    font-weight:100;
+    font-size: 70%;
+    color: black;  
+}
+
+.inlineblock {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.small {
+    font-size: 80%;
+}
+
+.progressbar {
+    border-style: solid;
+    border-width:1px;
+    border-radius: 5px;
+    width: 250px;
+    background: white;
+}
+
+.bar {    
+    height: 10px !important;   
+    border-radius: 5px 0px 0px 5px;
+}
+
+.field {
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.date {
+    font-size: 80%;
+    color: #333;
+}
+
+.description {
+    color: #333;
+    margin-top: 10px;
+    
+}
+
+ul {
+    list-style-type: none;
+}

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="jquery-dialog.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
         <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     </head>
@@ -16,30 +17,29 @@
                 <table class="tbl">
                     <col class="halfwidth">
                     <col class="halfwidth">
-                    <tr>
-                        <td><a id="about" href="cvwhite.php">&#9658; About me</a></td>
-                        <td><a id="cv" href="toinensivu.php">&#9658; Curriculum Vitae</a></td>
+                    <tr id="first-tr">
+                        <td><a id="about" href="#">&#9658; About me</a></td>
+                        <td><a id="cv" href="#">&#9658; Curriculum Vitae</a></td>
                     </tr>
                     <tr>
-                        <td><a id="projects" href="toinensivu.php">&#9658; Projects</a></td>
-                        <td><a id="music" href="toinensivu.php">&#9658; Music [Disabled]</a></td>
+                        <td><a id="projects" href="#">&#9658; Projects</a></td>
+                        <td><a id="music" href="#">&#9658; Music [Disabled]</a></td>
                     </tr>
-                    <tr>
-                        <td><a id="contact" href="toinensivu.php">&#9658; Contact</a></td>
+                    <tr id="last-tr">
+                        <td><a id="contact" href="#">&#9658; Contact</a></td>
                         <td></td>
                     </tr>
                 </table>
                 
-                <hr>               
+                <hr>      
+                
+                <div id="dialog" class="bodytext" title="Hello world">Hello from dialog world</div>
                 
                 <div>
                     <div class="list-row paddingleft">
-                        <p class="bodytext">Esc : Quit</p>
-                        <p class="bodytext">TAB : Select item</p>                     
-                    </div>
-                    <div class="list-row paddingleft">
-                        <p class="bodytext">F10 : Save & Exit Setup</p>
-                        <p class="bodytext">F12 : Exit</p>                    
+                        <p class="bodytext">Enter : Select item</p>
+                        <p class="bodytext">TAB : Next item</p>    
+                        <p class="bodytext">SHIFT-TAB : Previous item</p>
                     </div>
                 </div>
                 
@@ -53,5 +53,6 @@
         </div>
                 
         <script src="js/main.js"></script>
+        <script src="js/formnavigation.js"></script>
     </body>
 </html>

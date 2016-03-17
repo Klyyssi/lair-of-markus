@@ -24,6 +24,14 @@ table td {
     padding-top: 20px;
 }
 
+#first-tr td {
+    padding-top: 50px;
+}
+
+#last-tr td {
+    padding-bottom: 50px;
+}
+
 .tbl td:last-child {
     border-left: solid 2px white;
 }
@@ -95,10 +103,20 @@ a {
     text-decoration:none;
     color: #FAFA57;
     padding: 3px;
+    cursor: pointer;
+}
+
+#dialog {
+    color: white;
+}
+
+.no-close .ui-dialog-titlebar-close {
+  display: none;
 }
 
 a:hover, a:focus {
     background-color: #AA0000;
+    color: white;
 }
 
 .center {

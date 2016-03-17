@@ -1,22 +1,44 @@
 
-//setup dialog
+//setup dialogs
 (function() {
-    $( "#dialog" ).dialog({
-        resizable: true,
-        autoOpen: false,
-        draggable: false,
-        dialogClass: "no-close",
-        width: 500,
-        height: 350,
-        buttons: [
-            {
-              text: "OK",
-              click: function() {
-                $( this ).dialog( "close" );
-              }
-            }
-          ]
-      });
+    
+    var idToDialogData = [
+        {dialogId: "about-dialog", btnId: "about", width:650, height: 400},
+        {dialogId: "music-dialog", btnId: "music", width:300, height: 150},
+        {dialogId: "projects-dialog", btnId: "projects", width:450, height: 250},
+        {dialogId: "contact-dialog", btnId: "contact", width:450, height: 250}
+    ];
+    
+    var createDialog = function(dialogData) {
+        $( "#" + dialogData.dialogId ).dialog({
+            resizable: true,
+            autoOpen: false,
+            draggable: false,
+            dialogClass: "no-close",
+            width: dialogData.width,
+            height: dialogData.height,
+            buttons: [
+                {
+                  text: "OK",
+                  click: function() {
+                    $( this ).dialog( "close" );
+                  }
+                }
+            ]
+        });
+    };
+    
+    var addDialogOpenHandler = function(dialogData) {
+        $("#" + dialogData.btnId ).click(function(event) {
+            event.preventDefault();
+            $("#" + dialogData.dialogId).dialog("open");
+        });
+    };
+    
+    idToDialogData.forEach(function(data) {
+        createDialog(data);
+        addDialogOpenHandler(data);
+    });
 })();
 
 (function() {
@@ -37,17 +59,7 @@
         
         $("#" + idAndText.id).focusin(updateDisplayTextFn);
     };
-    
-    var addDialogOpenHandler = function(id, content) {
-        $("#" + id).click(function(event) {
-            event.preventDefault();
-            $("#dialog").dialog("open");
-        });
-    };
         
-    idToInfotext.map(function(idAndInfo) {
-        addMouseOverAndFocusInListeners(idAndInfo);
-        addDialogOpenHandler(idAndInfo.id, "");
-    });
+    idToInfotext.forEach(addMouseOverAndFocusInListeners);
     
 })();

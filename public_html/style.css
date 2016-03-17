@@ -133,3 +133,7 @@ a:hover, a:focus {
 .bodytext {
     color: #FFFFFF;
 }
+
+.smalltext {
+    font-size: 60%;
+}

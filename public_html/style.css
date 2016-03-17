@@ -1,0 +1,72 @@
+
+/* 
+    Created on : Mar 17, 2016, 12:49:26 AM
+    Author     : Markus Mulkahainen
+*/
+
+body {
+    font-family: 'Press Start 2P', cursive, serif;
+    margin: 5px;
+    background-color: #1229F9;
+}
+
+.textcenter {
+    text-align: center;
+}
+
+.lightmargin {
+    margin: 2px;
+}
+
+.hugeleftmargin {
+    margin-left: 50px;
+}
+
+.hugemargin {
+    margin: 50px;
+}
+
+.marginbtm {
+    margin-bottom: 40px;
+}
+
+.whiteframe {
+    border-style: solid;
+    border-color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.inlineblock {
+    display: inline-block;
+}
+
+.halfwidth {
+    width: 30%;
+}
+
+.floatleft {
+    float:left;
+}
+
+a {
+    text-decoration:none;
+    color: #FAFA57;
+    padding: 3px;
+}
+
+a:hover, a:focus {
+    background-color: #AA0000;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;    
+    width: 50%;
+}
+
+.bodytext {
+    color: #FFFFFF;
+}

@@ -3,7 +3,7 @@
 (function() {
     
     var idToDialogData = [
-        {dialogId: "about-dialog", btnId: "about", width:650, height: 400},
+        {dialogId: "about-dialog", btnId: "about", width:500, height: 500},
         {dialogId: "music-dialog", btnId: "music", width:300, height: 150},
         {dialogId: "projects-dialog", btnId: "projects", width:450, height: 250},
         {dialogId: "contact-dialog", btnId: "contact", width:450, height: 250}

@@ -137,3 +137,18 @@ a:hover, a:focus {
 .smalltext {
     font-size: 60%;
 }
+
+@media screen and (max-width: 640px){
+    
+    body {
+        font-size: small; 
+    }
+    
+    .center {
+        width: 100%;
+    }
+    
+    table td {
+        padding-left: 0;
+    }
+}

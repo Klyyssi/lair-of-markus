@@ -10,7 +10,6 @@ body {
     background-color: #1229F9;
 }
 
-
 table {
     width: 100%;
     border-collapse: collapse;
@@ -29,6 +28,44 @@ table td {
     border-left: solid 2px white;
 }
 
+.list-row {
+    display:inline-block;
+}
+
+.list-left {
+    width:auto;
+    padding:10px;
+    float:left;
+    border: 2px solid blue;
+}
+
+.lightmargin {
+    margin: 2px;
+}
+
+.list-right {
+    padding:10px;
+    float:right;
+    border:2px solid green;
+}
+
+.info-box {
+    display: block;
+    vertical-align: middle;
+    height: 70px;
+}
+
+.infotext {
+    text-align: center;
+    color: #FAFA57;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.halfwidth {
+    width: 50%;
+}
+
 hr {
     margin-top:0px;
 }
@@ -37,12 +74,8 @@ hr {
     text-align: center;
 }
 
-.lightmargin {
-    margin: 2px;
-}
-
-.hugemargin {
-    margin: 50px;
+.paddingleft {
+    padding-left: 10%;
 }
 
 .marginbtm {
@@ -71,7 +104,7 @@ a:hover, a:focus {
 .center {
     margin-left: auto;
     margin-right: auto;    
-    width: 50%;
+    width: 80%;
 }
 
 .bodytext {

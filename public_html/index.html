@@ -6,40 +6,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
     </head>
     <body>
         <h4 class="bodytext textcenter">CMOS Setup Utility - Copyright (C) 1984 - 2007 Award Software</h4>
-        <div class="whiteframe">
+        <div class="whiteframe center">
             <div class="whiteframe lightmargin">
                 <table class="tbl">
+                    <col class="halfwidth">
+                    <col class="halfwidth">
                     <tr>
-                        <td><a href="cvwhite.php">&#9658; Link</a></td>
-                        <td><a href="toinensivu.php">&#9658; Dolor sit</a></td>
+                        <td><a id="about" href="cvwhite.php">&#9658; About me</a></td>
+                        <td><a id="cv" href="toinensivu.php">&#9658; Curriculum Vitae</a></td>
                     </tr>
                     <tr>
-                        <td><a href="toinensivu.php">&#9658; GitHub</a></td>
-                        <td><a href="toinensivu.php">&#9658; Lorem Ipsum</a></td>
+                        <td><a id="projects" href="toinensivu.php">&#9658; Projects</a></td>
+                        <td><a id="music" href="toinensivu.php">&#9658; Music [Disabled]</a></td>
                     </tr>
                     <tr>
-                        <td><a href="toinensivu.php">&#9658; Amet consectetur</a></td>
-                        <td><a href="toinensivu.php">&#9658; Adipiscing edit</a></td>
+                        <td><a id="contact" href="toinensivu.php">&#9658; Contact</a></td>
+                        <td></td>
                     </tr>
                 </table>
+                
+                <hr>               
+                
+                <div>
+                    <div class="list-row paddingleft">
+                        <p class="bodytext">Esc : Quit</p>
+                        <p class="bodytext">TAB : Select item</p>                     
+                    </div>
+                    <div class="list-row paddingleft">
+                        <p class="bodytext">F10 : Save & Exit Setup</p>
+                        <p class="bodytext">F12 : Exit</p>                    
+                    </div>
+                </div>
                 
                 <hr>
                 
-                <table>
-                    <tr>
-                        <td><p class="bodytext">Esc : Quit</p></td>
-                        <td><p class="bodytext">TAB : Select item</p></td>
-                    </tr>
-                    <tr>
-                        <td><p class="bodytext">F10 : Save & Exit Setup</p></td>
-                        <td><p class="bodytext">F12: Quit</p></td>
-                    </tr>
-                </table>
+                <div class="info-box">
+                    <p id="infodisplay" class="infotext"></p>
+                </div>
             </div>
             
         </div>
+                
+        <script src="js/main.js"></script>
     </body>
 </html>

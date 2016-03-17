@@ -77,18 +77,18 @@
     </div>   
     <h4 class="nomarginbtm"><?php echo ($language == 'fi') ? "Koulutus" : "Education" ?></h4>   
         <ul class="first nomarginbtm">
-            <li class="listitem margintop"><?php echo ($language == 'fi') ? "NTNU - Norjan teknillis-luonnontieteellinen yliopisto" : "NTNU - Norwegian University of Science and Technology" ?></li>
-            <ul>
-                <li class="field"><?php echo ($language == 'fi') ? "Informaatioteknologia" : "Computer science" ?></li>                
-                <li class="date"><?php echo ($language == 'fi') ? "Vaihto-oppilas" : "Exchange student" ?></li>
-                <li class="date"><?php echo ($language == 'fi') ? "Syksy 2015" : "Autumn 2015" ?></li>
-            </ul>
             <li class="listitem margintop"><?php echo ($language == 'fi') ? "Jyväskylän yliopisto" : "University of Jyväskylä" ?></li>
             <ul>
                 <li class="field"><?php echo ($language == 'fi') ? "Tietotekniikka" : "Department of Mathematical Information Technology" ?></li>                
                 <li class="date"><?php echo ($language == 'fi') ? "Luonnontieteiden kandidaatti (arvioitu 2016)" : "Bachelor of Science (estimated 2016)" ?></li>
                 <li class="date"><?php echo ($language == 'fi') ? "Filosofian maisteri (arvioitu 2018)" : "Master of Science (estimated 2018)" ?></li>
                 <li class="date"><?php echo ($language == 'fi') ? "2013 alkaen" : "2013 - Present" ?></li>
+            </ul>
+            <li class="listitem margintop"><?php echo ($language == 'fi') ? "NTNU - Norjan teknillis-luonnontieteellinen yliopisto" : "NTNU - Norwegian University of Science and Technology" ?></li>
+            <ul>
+                <li class="field"><?php echo ($language == 'fi') ? "Informaatioteknologia" : "Computer science" ?></li>                
+                <li class="date"><?php echo ($language == 'fi') ? "Vaihto-oppilas" : "Exchange student" ?></li>
+                <li class="date"><?php echo ($language == 'fi') ? "Syksy 2015" : "Autumn 2015" ?></li>
             </ul>
             <li class="listitem margintop"><?php echo ($language == 'fi') ? "Satakunnan ammattikorkeakoulu" : "Satakunta University of Applied Sciences" ?></li>
             <ul>

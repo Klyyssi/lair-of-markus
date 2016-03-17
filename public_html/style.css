@@ -10,16 +10,35 @@ body {
     background-color: #1229F9;
 }
 
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table td {
+    padding-left: 10%;
+}
+
+.tbl td {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tbl td:last-child {
+    border-left: solid 2px white;
+}
+
+hr {
+    margin-top:0px;
+}
+
 .textcenter {
     text-align: center;
 }
 
 .lightmargin {
     margin: 2px;
-}
-
-.hugeleftmargin {
-    margin-left: 50px;
 }
 
 .hugemargin {
@@ -37,18 +56,6 @@ body {
 
 ul {
     list-style-type: none;
-}
-
-.inlineblock {
-    display: inline-block;
-}
-
-.halfwidth {
-    width: 30%;
-}
-
-.floatleft {
-    float:left;
 }
 
 a {

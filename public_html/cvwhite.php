@@ -8,10 +8,11 @@
         <title>CV - Markus Mulkahainen</title>
 </head>
 <body>
-<?php $language = "en";?>
+<?php $language = "en"; $hideAddress = true;?>
 <div class="center">  
     <img id="cvimg" class="right" src="images/kuvaCVsmall.JPG" alt="me" />
     <h1>Markus Mulkahainen</h1>
+    <?php if (!$hideAddress) { ?>
     <div class="date inner">
         16.03.1992 </br>
         Polttolinja 10 C 31 </br>
@@ -20,6 +21,7 @@
         markus.v.m.mulkahainen@student.jyu.fi</br>  
         www.thelairofmarkus.com</br>
     </div>   
+    <?php } ?>
     
     <h4 class="nomarginbtm"><?php echo ($language == 'fi') ? "Ohjelmointitaidot" : "Programming skills" ?></h4>
     

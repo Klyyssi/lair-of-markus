@@ -39,8 +39,8 @@
     };
     
     var addDialogOpenHandler = function(id, content) {
-        $("#" + id).click(function() {
-            //$("#dialog").html("Hello!");
+        $("#" + id).click(function(event) {
+            event.preventDefault();
             $("#dialog").dialog("open");
         });
     };

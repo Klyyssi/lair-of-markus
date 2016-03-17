@@ -11,9 +11,8 @@
     
     var createDialog = function(dialogData) {
         $( "#" + dialogData.dialogId ).dialog({
-            resizable: true,
+            resizable: false,
             autoOpen: false,
-            draggable: false,
             dialogClass: "no-close",
             width: dialogData.width,
             height: dialogData.height,

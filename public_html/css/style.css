@@ -138,6 +138,10 @@ a:hover, a:focus {
     font-size: 60%;
 }
 
+.hide {
+    display: none;
+}
+
 @media screen and (max-width: 640px){
     
     body {

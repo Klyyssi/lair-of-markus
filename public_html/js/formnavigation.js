@@ -3,9 +3,16 @@
 * formNavigation
 * Copyright 2013 Ole Bjørn Michelsen <http://ole.michelsen.dk/>
 * MIT license
+* 
+* Modified: 
+* 18.3.2016 Markus Mulkahainen
 */
-(function ($) {
-  $.fn.formNavigation = function () {
+
+var $ = require("jquery");
+
+module.exports = function() {
+    
+    $.fn.formNavigation = function () {
     $(this).each(function () {
       $(this).find('a').on('keyup', function(e) {
         switch (e.which) {
@@ -20,9 +27,7 @@
         }
       });
     });
-  };
-})(jQuery);
-
-$(document).ready(function () {
-        $('.tbl').formNavigation();
-});
+  }; 
+    
+  $('.tbl').formNavigation();
+};

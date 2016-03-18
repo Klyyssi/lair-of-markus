@@ -1,0 +1,14 @@
+{
+  "name": "lairofmarkus",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "jquery-ui": "^1.10.5",
+    "jquery": "^2.2.2"
+  },
+  "devDependencies": {
+    "browserify": "latest"
+  },
+  "author": "Markus Mulkahainen",
+  "license": "ISC"
+}

@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "dependencies": {
-    "jquery-ui": "^1.10.5",
-    "jquery": "^2.2.2"
+    "howler": "^1.1.29",
+    "jquery": "^2.2.2",
+    "jquery-ui": "^1.10.5"
   },
   "devDependencies": {
     "browserify": "latest"
   },
-  "author": "Markus Mulkahainen",
+  "author": "Markus Mulkahainen"
 }

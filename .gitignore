@@ -1,4 +1,5 @@
 nbproject
 node_modules
 public_html/js/app.js
+dist
 

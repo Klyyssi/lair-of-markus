@@ -8,11 +8,16 @@
     "jquery-ui": "^1.10.5"
   },
   "scripts": {
-    "build": "browserify public_html/js/main.js | uglifyjs > public_html/js/app.js"
+    "build:js": "browserify public_html/js/main.js | uglifyjs > dist/js/app.js",
+    "build:css": "cat public_html/css/*.css|cleancss -o dist/css/styles-min.css",
+    "copy:dist": "rsync -av --exclude=\"*.css\" --exclude=\"*.js\" public_html/ dist",
+    "rm:dist": "rm -r dist",
+    "build": "npm run rm:dist && npm run copy:dist && npm run build:css && npm run build:js"
   },
   "devDependencies": {
     "browserify": "latest",
-    "uglify-js": "latest"
+    "uglify-js": "latest",
+    "clean-css": "latest"
   },
   "author": "Markus Mulkahainen"
 }

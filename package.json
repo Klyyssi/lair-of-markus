@@ -1,14 +1,18 @@
 {
   "name": "lairofmarkus",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "dependencies": {
     "howler": "^1.1.29",
     "jquery": "^2.2.2",
     "jquery-ui": "^1.10.5"
   },
+  "scripts": {
+    "build": "browserify public_html/js/main.js | uglifyjs > public_html/js/app.js"
+  },
   "devDependencies": {
-    "browserify": "latest"
+    "browserify": "latest",
+    "uglify-js": "latest"
   },
   "author": "Markus Mulkahainen"
 }

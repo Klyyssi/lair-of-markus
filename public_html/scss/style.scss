@@ -127,7 +127,7 @@ a:hover, a:focus {
 .center {
     margin-left: auto;
     margin-right: auto;    
-    width: 70%;
+    width: 800px;
 }
 
 .bodytext {
@@ -142,7 +142,7 @@ a:hover, a:focus {
     display: none;
 }
 
-@media screen and (max-width: 640px){
+@media screen and (max-width: 800px){
     
     body {
         font-size: small; 

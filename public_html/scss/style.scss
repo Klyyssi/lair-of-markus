@@ -8,6 +8,15 @@ body {
     font-family: 'Press Start 2P', cursive, serif;
     margin: 5px;
     background-color: #1229F9;
+    margin-right: 10px;
+    
+    @include breakpoint(tablet) {
+        font-size: small;
+    }
+    
+    @include breakpoint(mobile) {
+        font-size: x-small;
+    }
 }
 
 .linkwrapper {
@@ -17,6 +26,17 @@ body {
 
 .linkbox:first-child {
     border-right: solid 2px white;
+    
+    @include breakpoint(mobile) {
+        border-right: none;
+        padding-bottom: 0px;
+    }
+}
+
+.linkbox:nth-child(2) {
+    @include breakpoint(mobile) {
+        padding-top: 0px;
+    }
 }
 
 .linkbox {
@@ -24,6 +44,15 @@ body {
     width: 300px;
     padding: 40px;
     vertical-align: top;
+    
+    @include breakpoint(tablet) {
+        width: 37%;
+        padding: 5%;
+    }
+    
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .list-row {
@@ -123,6 +152,14 @@ a span {
     margin-left: auto;
     margin-right: auto;    
     width: 800px;
+    
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+    
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .bodytext {
@@ -135,15 +172,4 @@ a span {
 
 .hide {
     display: none;
-}
-
-@media screen and (max-width: 800px){
-    
-    body {
-        font-size: small; 
-    }
-    
-    .center {
-        width: 100%;
-    }
 }

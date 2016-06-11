@@ -3,19 +3,24 @@ require("jquery-ui");
 
 module.exports = function() {
     var idToDialogData = [
-        {dialogId: "about-dialog", btnId: "about", width:500, height: 500},
-        {dialogId: "music-dialog", btnId: "music", width:300, height: 250},
-        {dialogId: "projects-dialog", btnId: "projects", width:450, height: 250},
-        {dialogId: "contact-dialog", btnId: "contact", width:450, height: 250}
+        {dialogId: "about-dialog", btnId: "about", width:400},
+        {dialogId: "music-dialog", btnId: "music", width:300},
+        {dialogId: "projects-dialog", btnId: "projects", width:400},
+        {dialogId: "contact-dialog", btnId: "contact", width:400}
     ];
     
     var createDialog = function(dialogData) {
         $( "#" + dialogData.dialogId ).dialog({
             resizable: false,
             autoOpen: false,
-            dialogClass: "no-close",
+            dialogClass: "no-close responsive-width",
             width: dialogData.width,
-            height: dialogData.height,
+            height: "auto",
+            position: {
+                my: "top",
+                at: "top",
+                of: $("#innerframe")
+            },
             buttons: [
                 {
                   text: "OK",

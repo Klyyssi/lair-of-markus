@@ -39,6 +39,21 @@ body {
     }
 }
 
+.responsive-width {
+    @include breakpoint(mobile) {
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+#about-dialog p {
+    font-size: small;
+    
+    @include breakpoint(mobile) {
+        font-size: x-small;
+    }
+}
+
 .linkbox {
     display: inline-block;
     width: 300px;

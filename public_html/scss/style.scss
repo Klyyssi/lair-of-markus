@@ -8,32 +8,66 @@ body {
     font-family: 'Press Start 2P', cursive, serif;
     margin: 5px;
     background-color: #1229F9;
+    margin-right: 10px;
+    
+    @include breakpoint(tablet) {
+        font-size: small;
+    }
+    
+    @include breakpoint(mobile) {
+        font-size: small;
+    }
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-table td {
-    padding-left: 10%;
-}
-
-.tbl td {
+.linkwrapper {
     padding-bottom: 20px;
     padding-top: 20px;
 }
 
-#first-tr td {
-    padding-top: 50px;
+.linkbox:first-child {
+    border-right: solid 2px white;
+    
+    @include breakpoint(mobile) {
+        border-right: none;
+        padding-bottom: 0px;
+    }
 }
 
-#last-tr td {
-    padding-bottom: 50px;
+.linkbox:nth-child(2) {
+    @include breakpoint(mobile) {
+        padding-top: 0px;
+    }
 }
 
-.tbl td:last-child {
-    border-left: solid 2px white;
+.responsive-width {
+    @include breakpoint(mobile) {
+        width: auto !important;
+        height: auto !important;
+    }
+}
+
+#about-dialog p {
+    font-size: small;
+    
+    @include breakpoint(mobile) {
+        font-size: x-small;
+    }
+}
+
+.linkbox {
+    display: inline-block;
+    width: 300px;
+    padding: 40px;
+    vertical-align: top;
+    
+    @include breakpoint(tablet) {
+        width: 37%;
+        padding: 5%;
+    }
+    
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .list-row {
@@ -124,10 +158,23 @@ a:hover, a:focus {
     outline: none;
 }
 
+a span {
+    position: relative;
+    top: -4px;
+}
+
 .center {
     margin-left: auto;
     margin-right: auto;    
     width: 800px;
+    
+    @include breakpoint(tablet) {
+        width: 100%;
+    }
+    
+    @include breakpoint(mobile) {
+        width: 100%;
+    }
 }
 
 .bodytext {
@@ -140,19 +187,4 @@ a:hover, a:focus {
 
 .hide {
     display: none;
-}
-
-@media screen and (max-width: 800px){
-    
-    body {
-        font-size: small; 
-    }
-    
-    .center {
-        width: 100%;
-    }
-    
-    table td {
-        padding-left: 0;
-    }
 }

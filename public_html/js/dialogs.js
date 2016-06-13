@@ -14,6 +14,9 @@ module.exports = function() {
             resizable: false,
             autoOpen: false,
             dialogClass: "no-close responsive-width",
+            open: function() {
+                $(this).parent().find(".ui-dialog-buttonpane button").focus();
+            },
             width: dialogData.width,
             height: "auto",
             position: {
